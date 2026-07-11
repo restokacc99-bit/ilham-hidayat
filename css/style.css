@@ -695,3 +695,34 @@ body {
   91%  { transform: translateX(-66.66%); }  /* Diam di gambar 3 */
   100% { transform: translateX(0); }        /* Kembali ke awal */
 }
+/* ==========================================================================
+   PENYESUAIAN TAMPILAN KHUSUS MOBILE (HP)
+   ========================================================================== */
+@media (max-width: 480px) {
+  /* Pastikan container invoice flex vertikal agar tombol selalu di tengah */
+  .invoice-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+
+  /* Mengatur tombol agar tidak terlalu lebar atau terlalu mepet di layar HP */
+  .btn.w-100 {
+    width: 90% !important; /* Memberikan sedikit ruang di samping */
+    margin: 10px auto 0 auto !important; /* Margin auto untuk memastikan posisi center */
+    display: block;
+  }
+
+  /* Memastikan teks di dalam tombol tetap terlihat jelas */
+  .btn {
+    padding: 14px 20px;
+    font-size: 0.85rem;
+  }
+
+  /* Mengatur padding modal di HP agar konten tidak terpotong */
+  .modal-content {
+    width: 95%;
+    padding: 15px;
+  }
+}
