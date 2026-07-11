@@ -53,14 +53,19 @@ Alur penyelesaian belanja yang efisien dan langsung terhubung dengan admin toko.
 * ![Halaman Checkout](image/invoic2.png)
 *  Pengguna mengisi data diri seperti nama, alamat, dan catatan khusus.
 *   * **pemilihan pembayaran:**
-    * * ![Halaman Checkout](image/invoic3)
+    * * ![Halaman Checkout](image/invoic3.png)
     * ada 3 pilihan qris sebank dan dana 
-* **WhatsApp Redirect:** Begitu proses selesai, sistem otomatis membuat *invoice* berformat rapi dan langsung membuka aplikasi WhatsApp untuk mengirimkan rincian pesanan tersebut ke nomor admin.
+* **WhatsApp Redirect:**
+** ![Halaman Checkout](image/invoic4.png)
+* Begitu proses selesai, sistem otomatis membuat *invoice* berformat rapi dan langsung membuka aplikasi WhatsApp untuk mengirimkan rincian pesanan tersebut ke nomor admin.
+* * ![Halaman Checkout](image/wa.png)
 
 ### 6. Dashboard Admin
-![Dashboard Admin](image/screenshot-admin.png)
+![Dashboard Admin](image/admin.png)
 Portal tersembunyi bagi pemilik toko untuk mengelola operasional.
-* **Manajemen Stok:** Admin dapat mengubah jumlah stok (*quantity*) setiap varian produk secara *real-time*.
+* **Manajemen Stok:**
+** ![Halaman Checkout](image/admin1.png)
+*   Admin dapat mengubah jumlah stok (*quantity*) setiap varian produk secara *real-time*.
 * **Sinkronisasi LocalStorage:** Perubahan stok langsung tersimpan di *browser*, sehingga stok yang tampil di halaman pelanggan selalu *up-to-date*.
 
 ---
