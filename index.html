@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BITZZ PHONE | Apple Premium Reseller</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    
+    <div id="authModal" class="auth-overlay" style="display: none;">
+      <div class="auth-popup">
+        <h2><i class="fa-solid fa-user-shield"></i> Autentikasi Keanggotaan</h2>
+        <p>Lengkapi profil Anda untuk melanjutkan transaksi.</p>
+        <form id="registerForm" onsubmit="handleRegistration(event)">
+          <div class="form-group">
+            <label>Nama Lengkap *</label>
+            <input type="text" id="regName" required placeholder="Nama Anda" />
+          </div>
+          <div class="form-group">
+            <label>Nomor WhatsApp *</label>
+            <input type="tel" id="regPhone" required placeholder="08xxxxxxxx" />
+          </div>
+          <div class="form-group">
+            <label>Alamat Lengkap *</label>
+            <input type="text" id="regAddress" required placeholder="Jl. Contoh No. 1" />
+          </div>
+          <div class="form-group">
+            <label>Nomor Akun Pembayaran *</label>
+            <input type="text" id="regBankNo" required placeholder="Nomor rekening / e-wallet" />
+          </div>
+          <div class="form-group">
+            <label>Penyedia Layanan</label>
+            <select id="regBankName" required>
+              <option value="SeaBank">SeaBank</option>
+              <option value="DANA">DANA</option>
+              <option value="BCA">BCA</option>
+              <option value="Mandiri">Bank Mandiri</option>
+            </select>
+          </div>
+          <button type="submit" class="btn btn-primary w-100">KONFIRMASI & LANJUT CHECKOUT</button>
+        </form>
+        <button onclick="closeAuthModal()" class="btn-close-text">Kembali ke Keranjang</button>
+      </div>
+    </div>
+
+    <div id="adminModal" class="auth-overlay" style="display: none;">
+      <div class="auth-popup">
+        <h2><i class="fa-solid fa-lock"></i> Portal Dashboard Admin</h2>
+        <p>Masukkan kredensial khusus otoritas BITZZ PHONE</p>
+        <form onsubmit="handleAdminLogin(event)">
+          <div class="form-group">
+            <label>Email Admin</label>
+            <input type="email" id="adminUser" required placeholder="ilhammangekyo@gmail.com" />
+          </div>
+          <div class="form-group">
+            <label>Password</label>
+            <input type="password" id="adminPass" required placeholder="Masukkan password" />
+          </div>
+          <button type="submit" class="btn btn-primary w-100">MASUK SYSTEM ADMIN</button>
+        </form>
+        <button onclick="closeAdminModal()" class="btn-close-text">Batal</button>
+      </div>
+    </div>
+
+    <div id="adminPanelModal" class="auth-overlay" style="display: none;">
+      <div class="auth-popup" style="max-width: 600px; width: 95%;">
+        <h2><i class="fa-solid fa-sliders"></i> Manajemen Stok Produk</h2>
+        <p>Perbarui kuantitas stok unit aktif di bawah ini:</p>
+        <div id="adminProductList" style="max-height: 350px; overflow-y: auto; margin-bottom: 15px; text-align: left;">
+          </div>
+        <button onclick="closeAdminPanelModal()" class="btn btn-secondary w-100">Selesai & Terapkan Perubahan</button>
+      </div>
+    </div>
+
+    <div id="mainContentWrapper">
+      
+      <header class="site-header">
+        <div class="header-container">
+          <a href="index.html" class="logo-brand">
+            <span class="logo-mols">BITZZ</span> <span class="logo-rb">PHONE</span>
+          </a>
+          <nav class="main-nav" id="main-nav">
+            <ul>
+              <li><a href="index.html" class="nav-item active">Home</a></li>
+              <li><a href="#katalogSection" class="nav-item" onclick="forceOpenCatalog()">Produk</a></li>
+              <li><a href="#profil" class="nav-item">Tentang Kami</a></li>
+              <li><a href="#" class="nav-item text-admin-link" onclick="openAdminModal(); return false;"><i class="fa-solid fa-user-gear"></i> Admin</a></li>
+            </ul>
+          </nav>
+          <div class="header-actions">
+            <span id="userGreeting" class="user-greeting"></span>
+            <button class="action-btn cart-trigger" onclick="openCartModal()">
+              <i class="fa-solid fa-bag-shopping"></i>
+              <span class="cart-badge" id="cartCount">0</span>
+            </button>
+          </div>
+        </div>
+      </header>
+
+      <main>
+        <section class="hero-section">
+          <div class="hero-content">
+            <span class="hero-badge">Official Premium Apple Reseller</span>
+            <h1>BITZZ PHONE</h1>
+            <p style="margin-bottom: 15px; font-weight: 500;">Pusat Distribusi & Retail Gadget Apple Premium Original Terbesar di Bandung.</p>
+            
+           <div class="slider-container">
+  <div class="slider-track">
+    <div class="slide"><img src="image/BANER 1.png" alt="Promo 1"></div>
+    <div class="slide"><img src="image/BANER 2.png" alt="Promo 2"></div>
+    <div class="slide"><img src="image/BANER 3.png" alt="Promo 3"></div>
+  </div>
+</div>
+
+            <div class="search-container">
+              <input type="text" id="mainSearch" placeholder="Cari tipe perangkat Apple..." onkeyup="searchApp()" />
+            </div>
+          </div>
+        </section>
+
+        <section class="categories-section container">
+          <h2 class="section-title">Pilih Kategori Produk</h2>
+          <div class="category-grid">
+            <button class="category-card" onclick="filterCategory('iphone', this)">
+              <i class="fa-solid fa-mobile-screen-button"></i>
+              <h3>iPhone</h3>
+            </button>
+            <button class="category-card" onclick="filterCategory('macbook', this)">
+              <i class="fa-solid fa-laptop"></i>
+              <h3>MacBook</h3>
+            </button>
+            <button class="category-card" onclick="filterCategory('ipad', this)">
+              <i class="fa-solid fa-tablet-screen-button"></i>
+              <h3>iPad Collection</h3>
+            </button>
+          </div>
+        </section>
+
+        <section id="katalogSection" class="promo-section container" style="display: none;">
+          <h2 class="section-title" id="katalogTitle">Katalog Produk</h2>
+          <div class="product-grid" id="productGrid">
+            </div>
+        </section>
+
+        <section class="testimonials-section">
+          <div class="container">
+            <h2 class="section-title text-center">REVIEW PELANGGAN</h2>
+            <div class="testimonial-grid">
+              <div class="testimonial-card">
+                <div class="stars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
+                <p>"Pelayanan cepat banget! Beli iPhone 17 Pro sore, besok siangnya langsung mendarat dengan selamat di rumah. Packing kayu sangat aman berlapis."</p>
+                <h4>TASLIM. - Bandung</h4>
+              </div>
+              <div class="testimonial-card">
+                <div class="stars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
+                <p>"Sangat terbantu dengan opsi pembayaran transfer SeaBank yang otomatis terkonfirmasi. Customer servicenya sangat ramah dan responsif."</p>
+                <h4>JONI M. - Jakarta</h4>
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+
+      <div id="modal" class="modal"><div class="modal-content" id="modalContent"></div></div>
+
+      <footer id="profil" class="site-footer">
+        <div class="container footer-grid">
+          <div class="footer-brand-info">
+            <h3>BITZZ PHONE</h3>
+            <p class="tagline">"Official Premium Apple Device Provider"</p>
+            <p class="address"><i class="fa-solid fa-location-dot"></i> Jl. Terusan Jenderal Sudirman No. 3, Bandung, Jawa Barat, Indonesia</p>
+          </div>
+          <div class="footer-links">
+            <h4>Navigasi Cepat</h4>
+            <ul>
+              <li><a href="#katalogSection" onclick="forceOpenCatalog()">Katalog Produk</a></li>
+              <li><a href="#" onclick="openCartModal(); return false;">Tas Belanja Toko</a></li>
+            </ul>
+          </div>
+          <div class="footer-contact">
+            <h4>Hubungi Kami & Sosmed</h4>
+            <p><i class="fa-solid fa-clock"></i> Setiap Hari (09.00 - 21.00 WIB)</p>
+            <p><i class="fa-solid fa-phone"></i> WhatsApp: 0856-0086-5191</p>
+            <div class="social-medias">
+              <a href="https://instagram.com/bitzz.phone" target="_blank" aria-label="Instagram BITZZ PHONE"><i class="fa-brands fa-instagram"></i> @bitzz.phone</a>
+            </div>
+          </div>
+        </div>
+        <div class="footer-bottom text-center">
+          <p>&copy; 2026 BITZZ PHONE. All Rights Reserved. Designed for Professional Portfolio Deployment.</p>
+        </div>
+      </footer>
+    </div>
+
+    <script src="js/script.js"></script>
+  </body>
+</html>
