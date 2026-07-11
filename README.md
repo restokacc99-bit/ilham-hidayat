@@ -50,8 +50,11 @@ Alur penyelesaian belanja yang efisien dan langsung terhubung dengan admin toko.
 * **Manajemen Keranjang:** Menampilkan rincian barang, varian GB yang dipilih, jumlah unit, dan kalkulasi subtotal.
 * **Moto Toko:** Pada bagian *checkout*, informasi pembayaran digantikan dengan penempatan Moto Toko BITZZ PHONE untuk memperkuat *branding*.
 * **Formulir Pengiriman:**
-* ![Halaman Checkout](image/invoic 2.png)
+* ![Halaman Checkout](image/invoic2.png)
 *  Pengguna mengisi data diri seperti nama, alamat, dan catatan khusus.
+*   * **pemilihan pembayaran:**
+    * * ![Halaman Checkout](image/invoic3)
+    * ada 3 pilihan qris sebank dan dana 
 * **WhatsApp Redirect:** Begitu proses selesai, sistem otomatis membuat *invoice* berformat rapi dan langsung membuka aplikasi WhatsApp untuk mengirimkan rincian pesanan tersebut ke nomor admin.
 
 ### 6. Dashboard Admin
