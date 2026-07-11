@@ -1,7 +1,7 @@
 # BITZZ PHONE - Premium Apple Reseller E-Commerce
 
 ![Banner Utama Bitzz Phone](image/benarutama.png)
-> *Catatan: Ganti `image/screenshot-banner.png` dengan tangkapan layar Hero Banner website kamu.*
+
 
 BITZZ PHONE adalah aplikasi web e-commerce *front-end* yang berfokus pada penjualan produk-produk Apple (iPhone, MacBook, dan iPad). Proyek ini dibangun menggunakan HTML, CSS, dan JavaScript murni (Vanilla) dengan memanfaatkan `localStorage` sebagai simulasi *database* untuk manajemen status keranjang belanja, inventori produk, dan autentikasi sederhana.
 
@@ -12,7 +12,7 @@ BITZZ PHONE adalah aplikasi web e-commerce *front-end* yang berfokus pada penjua
 Berikut adalah rincian fungsionalitas dari setiap bagian pada website BITZZ PHONE:
 
 ### 1. Header & Navigasi Utama
-![Header Navigasi](image/screenshot-header.png)
+![Header Navigasi](image/headernavigasi.png)
 Bagian atas website (Header) dirancang agar responsif dan memudahkan pengguna untuk berpindah halaman. Terdapat menu:
 * **Home:** Kembali ke halaman utama.
 * **Produk:** Mengarahkan pengguna langsung ke bagian katalog produk.
@@ -22,7 +22,7 @@ Bagian atas website (Header) dirancang agar responsif dan memudahkan pengguna un
 * **Search Bar:** Fitur pencarian *real-time* untuk mencari nama produk dengan cepat.
 
 ### 2. Banner Promosi (Hero Section)
-![Banner Promosi](image/screenshot-promosi.png)
+![Banner Promosi](image/BANER_1.png)
 Bagian sambutan pertama kali (*Hero Banner*) yang dirancang visual untuk menarik perhatian pelanggan.
 * **Visual Menarik:** Menampilkan gambar produk unggulan atau promo terbaru dengan tata letak yang profesional.
 * **Call-to-Action (CTA):** Tombol yang mengarahkan pengguna langsung ke area katalog belanja agar alur transaksi menjadi lebih cepat.
