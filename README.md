@@ -22,13 +22,13 @@ Bagian atas website (Header) dirancang agar responsif dan memudahkan pengguna un
 * **Search Bar:** Fitur pencarian *real-time* untuk mencari nama produk dengan cepat.
 
 ### 2. Banner Promosi (Hero Section)
-![Banner Promosi](image/BANER_1.png)
+![Banner Promosi](image/PROMOSI.png)
 Bagian sambutan pertama kali (*Hero Banner*) yang dirancang visual untuk menarik perhatian pelanggan.
 * **Visual Menarik:** Menampilkan gambar produk unggulan atau promo terbaru dengan tata letak yang profesional.
 * **Call-to-Action (CTA):** Tombol yang mengarahkan pengguna langsung ke area katalog belanja agar alur transaksi menjadi lebih cepat.
 
 ### 3. Katalog Produk (Product Showcase)
-![Katalog Produk](image/screenshot-produk.png)
+![Katalog Produk](image/katalog.png)
 Menampilkan seluruh lini produk yang dijual, dikategorikan secara rapi (iPhone, MacBook, iPad).
 * **Tampilan Kartu (Card):** Setiap produk ditampilkan dalam bentuk kartu berisi foto produk, nama, dan harga dasar (*start from*).
 * **Sistem Katalog Dinamis:** Menampilkan seluruh lini produk (dari seri reguler hingga Pro Max) tanpa ada yang terpotong.
