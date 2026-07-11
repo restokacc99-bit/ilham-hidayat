@@ -34,9 +34,12 @@ Menampilkan seluruh lini produk yang dijual, dikategorikan secara rapi (iPhone, 
 * **Sistem Katalog Dinamis:** Menampilkan seluruh lini produk (dari seri reguler hingga Pro Max) tanpa ada yang terpotong.
 
 ### 4. Detail Produk & Pemilihan Varian (Checkout Area)
-![Pemilihan Varian](image/screenshot-varian.png)
+![Pemilihan Varian](image/pemilihanproduk.png)
+![Pemilihan Varian](image/produk.png)
 Fitur interaktif tempat pelanggan menyesuaikan spesifikasi barang sebelum memasukkannya ke keranjang.
-* **Pilihan Kapasitas (Gigabyte/Terabyte):** Tersedia opsi *storage* seperti 128GB, 256GB, 512GB, hingga 1TB. Pengguna wajib memilih salah satu sebelum membeli.
+* **Pilihan Kapasitas (Gigabyte/Terabyte):**
+* ![Pemilihan Varian](image/piliangbproduk.png)
+*  Tersedia opsi *storage* seperti 128GB, 256GB, 512GB, hingga 1TB. Pengguna wajib memilih salah satu sebelum membeli.
 * **Harga Otomatis (Dynamic Pricing):** Ketika pelanggan mengklik opsi kapasitas yang berbeda, harga produk di layar akan langsung berubah menyesuaikan harga varian tersebut.
 * **Pemilihan Kuantitas:** Pelanggan dapat mengatur berapa banyak unit yang ingin dibeli untuk varian tersebut melalui fitur kuantitas (*quantity selector*).
 * **Tombol "Beli":** Tombol utama untuk mengeksekusi pesanan. Sistem akan mengecek ketersediaan stok; jika stok habis, tombol tidak bisa ditekan.
