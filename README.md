@@ -67,6 +67,17 @@ Portal tersembunyi bagi pemilik toko untuk mengelola operasional.
 ** ![Halaman Checkout](image/admin1.png)
 *   Admin dapat mengubah jumlah stok (*quantity*) setiap varian produk secara *real-time*.
 * **Sinkronisasi LocalStorage:** Perubahan stok langsung tersimpan di *browser*, sehingga stok yang tampil di halaman pelanggan selalu *up-to-date*.
+### 7. Tampilan Di Hp
+![hp](image/1.jpeg)
+![hp](image/2.jpeg)
+![hp](image/3.jpeg)
+![hp](image/4.jpeg)
+![hp](image/5.jpeg)
+![hp](image/6.jpeg)
+![hp](image/7.jpeg)
+![hp](image/8.jpeg)
+![hp](image/9.jpeg)
+![hp](image/10.jpeg)
 
 ---
 
