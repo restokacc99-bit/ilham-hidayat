@@ -45,11 +45,13 @@ Fitur interaktif tempat pelanggan menyesuaikan spesifikasi barang sebelum memasu
 * **Tombol "Beli":** Tombol utama untuk mengeksekusi pesanan. Sistem akan mengecek ketersediaan stok; jika stok habis, tombol tidak bisa ditekan.
 
 ### 5. Keranjang Belanja & Checkout (WhatsApp Integration)
-![Halaman Checkout](image/screenshot-checkout.png)
+![Halaman Checkout](image/invoic1.png)
 Alur penyelesaian belanja yang efisien dan langsung terhubung dengan admin toko.
 * **Manajemen Keranjang:** Menampilkan rincian barang, varian GB yang dipilih, jumlah unit, dan kalkulasi subtotal.
 * **Moto Toko:** Pada bagian *checkout*, informasi pembayaran digantikan dengan penempatan Moto Toko BITZZ PHONE untuk memperkuat *branding*.
-* **Formulir Pengiriman:** Pengguna mengisi data diri seperti nama, alamat, dan catatan khusus.
+* **Formulir Pengiriman:**
+* ![Halaman Checkout](image/invoic 2.png)
+*  Pengguna mengisi data diri seperti nama, alamat, dan catatan khusus.
 * **WhatsApp Redirect:** Begitu proses selesai, sistem otomatis membuat *invoice* berformat rapi dan langsung membuka aplikasi WhatsApp untuk mengirimkan rincian pesanan tersebut ke nomor admin.
 
 ### 6. Dashboard Admin
